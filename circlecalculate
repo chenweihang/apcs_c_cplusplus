@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r;
+    float c;
+    float s;
+    printf("請輸入圓的半徑");
+    scanf("%d",&r);
+    
+    if(r>=0){
+        //Calculate circle area and circle length(perimeter)
+        c=2*r*3.14;
+    s=3.14*r*r;
+    printf("圓周長：%.2f",c);
+    printf("圓面積：%.2f",s);
+    }else{
+        //print error message
+        printf("輸入圓半徑請大於0");
+    }
+    
+    
+    return 0;
+    
+
+}
