@@ -1,0 +1,46 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+內容： 某校為了不讓學生互相比較成績，所以成績上記錄的是成績等第而不是分數，它的規則如下：
+ 
+    90分(含)~100分(含)為A等
+    80分(含)~90分(不含)為B等
+    70分(含)~80分(不含)為C等
+    60分(含)~70分(不含)為D等
+    不滿60分者為E等
+    現在給你一個成績，請你判斷它是哪一個等第。 
+
+*******************************************************************************/
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int grade;
+    printf("請輸入需判斷的成績（0-100）");
+    scanf("%d",&grade);
+
+   
+    if(grade >= 90 && grade < 100)
+        printf("您的成績是A等");
+    else if (grade >= 80 && grade < 90)
+        printf("您的成績是B等");
+    else if (grade >= 70 && grade < 80)
+        printf("您的成績是C等");
+    else if (grade >= 60 && grade < 70)
+        printf("您的成績是D等");    
+    else if (grade < 60)
+        printf("您的成績是E等");
+    else 
+        printf("請輸入需判斷的成績（0-100)"); 
+       
+    cout<<" End";
+    return 0;
+
+    
+}
